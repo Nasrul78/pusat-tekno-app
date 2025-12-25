@@ -1,10 +1,15 @@
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Inter, JetBrains_Mono } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/provider/theme-provider"
 
 const inter = Inter({
-  variable: "--font-inter",
+  variable: "--font-sans",
+  subsets: ["latin"],
+})
+
+const jetbrains = JetBrains_Mono({
+  variable: "--font-mono",
   subsets: ["latin"],
 })
 
